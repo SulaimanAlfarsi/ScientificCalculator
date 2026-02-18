@@ -7,7 +7,7 @@ public class Main {
     }
     public static void main(String[] args) {
 
-
+        // factorial
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter number:  ");
