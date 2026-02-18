@@ -14,7 +14,7 @@ public class Main {
 
 
 
-        
+
         // factorial
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number:  ");
