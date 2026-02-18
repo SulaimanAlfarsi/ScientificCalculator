@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 
 public class Main {
+
     public static void main(String[] args) {
 
 
@@ -25,6 +26,20 @@ public class Main {
 
 
 
+        // factorial Abdullah
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter number:  ");
+        int num = sc.nextInt();
+
+
+        int result1 = 1;
+        for (int i = num; i >= 1; i--) {
+            result1 = result1 * i;
+        }
+        System.out.println("factorial is :  " + result1);
+
+
+
 
         // even\odd identifier Yarub
         Scanner scanner = new Scanner(System.in);
@@ -38,22 +53,36 @@ public class Main {
         }
 
 
+
+
         // Sulaiman
         Scanner scanner1 = new Scanner(System.in);
         System.out.print("Enter a number: ");
         int input1 = scanner1.nextInt();
-        int result1 =(input1*input1);
-        System.out.println("Square: " + result1);
+        int result2 =(input1*input1);
+        System.out.println("Square: " + result2);
 
-        // Power function
+
+
+        // Power Function Abdullmajeed
         double powerFun = 0;
         System.out.println("please enter two numbers: ");
         double firstNumber = scanner1.nextInt();
         double secondNumber = scanner1.nextInt();
         powerFun = Math.pow(firstNumber, secondNumber);
-        System.out.printf("The power of %.0f and %.0f is %.2f%n", firstNumber, secondNumber, powerFun);
+        System.out.printf("%.0f is base and %.0f is exponent and the result is %.2f", firstNumber, secondNumber, powerFun);
 
         scanner1.close();
+
+
+
+
     }
-}
+
+    }
+
+
+
+
+
 
