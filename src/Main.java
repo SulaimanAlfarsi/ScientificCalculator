@@ -1,10 +1,23 @@
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
+
+    // Method to calculate square
+    public static int generateSquare(int number) {
+        return number * number;
+    }
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int input = scanner.nextInt();
+
+        int result = generateSquare(input);
+
+        System.out.println("Square: " + result);
+
         double powerFun = 0;
 
         System.out.println("please enter two numbers: ");
@@ -14,6 +27,6 @@ public class Main {
         powerFun = Math.pow(firstNumber,secondNumber);
         System.out.printf("The power of %.0f and %.0f is %.2f%n", firstNumber, secondNumber, powerFun);
 
+        scanner.close();
     }
-
 }
